@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Auto populate Dropdown with jQuery AJAX in Laravel 8</title>
+   <title>Index</title>
 </head>
 <body>
 
