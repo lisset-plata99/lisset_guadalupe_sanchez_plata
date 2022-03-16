@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CancionesController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CodigoPostalController;
 /*
@@ -13,7 +14,7 @@ use App\Http\Controllers\CodigoPostalController;
 |
 */
 
-Route::get('/', function () {return view('welcome');
-Route::get('/verCodigoPostal',[CodigoPostalController::class,'mostrarCodigosPostales'])->name('verCodigoPostal2');
-
-});
+// Route::get('/', function () {return view('welcome');});
+Route::get('/verCodigo',[CodigoPostalController::class,'mostrarCodigosPostales'])->name('verCodigoPostal2');
+Route::get('/index', [CodigoPostalController::class, 'codigoPostal']);
+Route::get('/obtenerTipoAsenta/{id}', [CodigoPostalController::class, 'obtenerTipoAsenta']);
