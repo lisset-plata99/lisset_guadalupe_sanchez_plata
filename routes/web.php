@@ -14,7 +14,7 @@ use App\Http\Controllers\CodigoPostalController;
 |
 */
 
-// Route::get('/', function () {return view('welcome');});
+Route::get('/', function () {return view('welcome');});
 Route::get('/verCodigo',[CodigoPostalController::class,'mostrarCodigosPostales'])->name('verCodigoPostal2');
 Route::get('/index', [CodigoPostalController::class, 'codigoPostal']);
 Route::get('/obtenerTipoAsenta/{id}', [CodigoPostalController::class, 'obtenerTipoAsenta']);
